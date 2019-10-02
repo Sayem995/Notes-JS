@@ -1,11 +1,6 @@
-function testNoteTextDefault(){
-  try {
-    var note = new Note();
-    assert.isTrue(note.getText() === "My favourite language is JavaScript");
-  }
-    catch(err) {
-      return "Error - " + arguments.callee.name + " : " + err;
-    }
+function noteObjectAcceptsTextAsAnArgument() {
+  var note = new Note('My favourite language is JavaScript.');
+  assert.isTrue(note.text === 'My favourite language is JavaScript.');
+};
 
-    return "Pass - " + arguments.callee.name;
-  };
+noteObjectAcceptsTextAsAnArgument()
