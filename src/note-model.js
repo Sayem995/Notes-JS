@@ -3,6 +3,5 @@
     this.text = text
   }
 
-
-exports.Note = Note;
+  exports.Note = Note;
 })(this);
