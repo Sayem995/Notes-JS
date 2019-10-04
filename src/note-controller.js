@@ -10,7 +10,9 @@
     notelistview.returnHtml(notelist);
 
     console.log(notelistview.returnHtml(notelist));
-
+  };
+   
+NoteController.prototype.insertHTMLToApp = function() {
 console.log(document.getElementById("app").innerHTML = notelistview.returnHtml(notelist));
 };
 exports.NoteController = NoteController;
