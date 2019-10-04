@@ -8,6 +8,7 @@
     <script src="src/note-controller.js"></script>
 
     <script src="spec/assert.js"></script>
+    <script src="lib/jquery-3.4.1.js"></script>
     <!-- <script src="spec/note-spec.js"></script>
     <script src="spec/note-list-model-spec.js"></script>
     <script src="spec/note-list-view-model-spec.js"></script> -->
@@ -15,7 +16,17 @@
 
     <title>Notes App</title>
   </head>
+
+<script>
+$(document).ready(function(){
+  $("#results").append("<li>" + testNoteControllerInnerHTML()+"</li>");
+});
+
+</script>
+
   <body>
+    <ol id='results'> </ol>
+    
 
   </body>
 </html>
